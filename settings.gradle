@@ -1,0 +1,2 @@
+include ':app', ':opencv-contours'
+rootProject.name='OpenCV Master'
