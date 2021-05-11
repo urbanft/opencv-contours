@@ -3,7 +3,7 @@ plugins {
 }
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group 'com.github.sidparekh'
+group 'com.github.urbanft'
 
 android {
     compileSdkVersion 30
