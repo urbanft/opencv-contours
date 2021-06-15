@@ -58,6 +58,16 @@ public class OpenCVLoader
     public static final String OPENCV_VERSION_2_4_11 = "2.4.11";
 
     /**
+     * OpenCV Library version 2.4.12.
+     */
+    public static final String OPENCV_VERSION_2_4_12 = "2.4.12";
+
+    /**
+     * OpenCV Library version 2.4.13.
+     */
+    public static final String OPENCV_VERSION_2_4_13 = "2.4.13";
+
+    /**
      * OpenCV Library version 3.0.0.
      */
     public static final String OPENCV_VERSION_3_0_0 = "3.0.0";
@@ -66,6 +76,26 @@ public class OpenCVLoader
      * OpenCV Library version 3.1.0.
      */
     public static final String OPENCV_VERSION_3_1_0 = "3.1.0";
+
+    /**
+     * OpenCV Library version 3.2.0.
+     */
+    public static final String OPENCV_VERSION_3_2_0 = "3.2.0";
+
+    /**
+     * OpenCV Library version 3.3.0.
+     */
+    public static final String OPENCV_VERSION_3_3_0 = "3.3.0";
+
+    /**
+     * OpenCV Library version 3.4.0.
+     */
+    public static final String OPENCV_VERSION_3_4_0 = "3.4.0";
+
+    /**
+     * Current OpenCV Library version
+     */
+    public static final String OPENCV_VERSION = "3.4.14";
 
 
     /**
@@ -87,4 +117,16 @@ public class OpenCVLoader
         return StaticHelper.initOpenCV(InitCuda);
     }
 
+    /**
+     * Loads and initializes OpenCV library using OpenCV Engine service.
+     * @param Version OpenCV library version.
+     * @param AppContext application context for connecting to the service.
+     * @param Callback object, that implements LoaderCallbackInterface for handling the connection status.
+     * @return Returns true if initialization of OpenCV is successful.
+     */
+    public static boolean initAsync(String Version, Context AppContext,
+            LoaderCallbackInterface Callback)
+    {
+        return AsyncServiceHelper.initOpenCV(Version, AppContext, Callback);
+    }
 }
