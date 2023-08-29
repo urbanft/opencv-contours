@@ -13,7 +13,6 @@ import org.opencv.core.TermCriteria;
 import org.opencv.utils.Converters;
 
 // C++: class Core
-
 public class Core {
     // these constants are wrapped inside functions to prevent inlining
     private static String getVersion() { return "3.4.14"; }
